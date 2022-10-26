@@ -14,8 +14,8 @@ jobs:
       - name: connect and git pull
         uses: appleboy/ssh-action@master
         with:
-          host : ${{ secrets.HOST }}
-          username : ${{ secrets.NAME }}
+          host : 112.169.122.210
+          username : ai
           password : ${{ secrets.PASSWORD }}
           port : ${{ secrets.PORT }}
           script: |
