@@ -14,11 +14,11 @@ jobs:
       - name: connect and git pull
         uses: appleboy/ssh-action@master
         with:
-          host : 112.169.122.210
+          host : ${{ secrets.HOST }}
           username : ${{ secrets.NAME }}
           password : ${{ secrets.PASSWORD }}
           port : ${{ secrets.PORT }}
           script: |
+            whoami
             cd workspace/action
-            echo ${{ secrets.HOST }}
             git pull
