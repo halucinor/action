@@ -20,5 +20,5 @@ jobs:
           port : ${{ secrets.PORT }}
           script: |
             cd workspace/action
-            # git checkout main
+            echo ${{ secrets.HOST }}
             git pull
