@@ -15,7 +15,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host : 112.169.122.210
-          username : ai
+          username : ${{ secrets.NAME }}
           password : ${{ secrets.PASSWORD }}
           port : ${{ secrets.PORT }}
           script: |
